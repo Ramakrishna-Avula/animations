@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: black;}
+        .c{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(232, 183, 9);
+            border-radius: 100%;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            align-items: center;
+
+        }
+        .b{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            border-radius: 100%;
+            position: absolute;
+            top: 1%;
+            left: 50%;
+            align-items: center;
+            animation-name: c2t;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        @keyframes c2t{
+            0%{top:10% ;
+                left:50%;
+                border: radius 5px;
+                box-shadow: 0 0 25px 10px yellow
+
+            }
+            25%{
+                top: 9%;
+                right: 79%;
+    
+                border: radius 5px;
+                box-shadow: 0 0 25px 10px yellow
+    
+            
+            }
+            60%{top:0% ;
+                left:50% ;
+                width:500px ;
+                height: 500px;
+                border: radius 500px;
+                box-shadow: 0 0 25px 10px yellow;
+    
+
+            }
+            100%{top:10% ;
+                left:50%;
+                border: radius 5px;
+                box-shadow: 0 0 25px 10px yellow
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="p">
+        <div class="c">
+
+        </div>
+        <div class="b">
+
+        </div>
+    </div>
+</body>
+</html>
